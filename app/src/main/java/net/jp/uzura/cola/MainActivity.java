@@ -1,10 +1,12 @@
-package com.uzura.cola;
+package net.jp.uzura.cola;
 
 import com.crittercism.app.Crittercism;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import net.jp.uzura.cola.R;
 
 
 public class MainActivity extends ActionBarActivity {
