@@ -14,7 +14,7 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
 
         // Crittercism
-        Crittercism.initialize(getApplicationContext(), "CRITTERCISM_APP_ID"); //Crittercism App ID
+        Crittercism.initialize(getApplicationContext(), getString(R.string.crittercism_app_id)); //Crittercism App ID
 
         setContentView(R.layout.activity_main);
     }
