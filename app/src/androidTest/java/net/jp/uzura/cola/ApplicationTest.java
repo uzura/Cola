@@ -1,4 +1,4 @@
-package com.uzura.cola;
+package net.jp.uzura.cola;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
