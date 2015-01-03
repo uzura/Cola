@@ -1,6 +1,11 @@
 package net.jp.uzura.cola;
 
 import com.crittercism.app.Crittercism;
+
+
+import android.net.Uri;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -15,7 +20,7 @@ import android.content.Intent;
 import net.jp.uzura.cola.R;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends ActionBarActivity implements BlankFragment.OnFragmentInteractionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +31,7 @@ public class MainActivity extends ActionBarActivity {
 
         setContentView(R.layout.activity_main);
 
+        /*
         // 振動ボタン
         Button btn = (Button)findViewById(R.id.button);
         btn.setOnClickListener(new View.OnClickListener() {
@@ -44,7 +50,13 @@ public class MainActivity extends ActionBarActivity {
                 intent.putExtra("net.jp.uzura.cola.testString", "!TEST STRING!");
                 startActivity(intent);
             }
-        });
+        });*/
+
+        FragmentManager manager = getSupportFragmentManager(); //http://www.united-bears.co.jp/blog/archives/160
+
+        final ViewPager viewPager = (ViewPager)findViewById(R.id.pager);
+        final TestFragmentPagerAdapter adapter = new TestFragmentPagerAdapter(manager);
+        viewPager.setAdapter(adapter);
     }
 
 
@@ -68,5 +80,10 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+        // TODO Auto-generated method stub
     }
 }
