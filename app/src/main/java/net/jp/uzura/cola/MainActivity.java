@@ -1,6 +1,7 @@
 package net.jp.uzura.cola;
 
 import com.crittercism.app.Crittercism;
+import com.viewpagerindicator.CirclePageIndicator;
 
 
 import android.net.Uri;
@@ -52,11 +53,15 @@ public class MainActivity extends ActionBarActivity implements BlankFragment.OnF
             }
         });*/
 
+        // ViewPager with fragment
         FragmentManager manager = getSupportFragmentManager(); //http://www.united-bears.co.jp/blog/archives/160
-
         final ViewPager viewPager = (ViewPager)findViewById(R.id.pager);
         final TestFragmentPagerAdapter adapter = new TestFragmentPagerAdapter(manager);
         viewPager.setAdapter(adapter);
+
+        //CirclePageIndicator
+        CirclePageIndicator mIndicator = (CirclePageIndicator)findViewById(R.id.indicator);
+        mIndicator.setViewPager(viewPager);
     }
 
 
@@ -83,6 +88,7 @@ public class MainActivity extends ActionBarActivity implements BlankFragment.OnF
     }
 
     @Override
+    // for fragment
     public void onFragmentInteraction(Uri uri) {
         // TODO Auto-generated method stub
     }
