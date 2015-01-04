@@ -1,8 +1,9 @@
 package net.jp.uzura.cola;
 
-import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -13,6 +14,12 @@ public class LegalActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_legal);
+
+        // デバッグ用機能。ウェルカム画面表示設定をリセット
+        SharedPreferences pref = getSharedPreferences("app",MODE_PRIVATE);
+        SharedPreferences.Editor editor = pref.edit();
+        editor.putBoolean("isShowWelcome",true);
+        editor.commit();
     }
 
 
