@@ -5,6 +5,7 @@
     <item android:state_pressed="true">
         <shape android:shape="oval" android:useLevel="false">
             <solid android:color="#850600" />
+            <stroke android:width="3px" android:color="#CCCCCC" />
         </shape>
     </item>
 
@@ -16,21 +17,6 @@
                 android:endColor="#ffc21400"
                 android:angle="90"/>
             <stroke android:width="3px" android:color="#CCCCCC" />
-            <!--<solid android:color="#b71300" />-->
         </shape>
     </item>
 </selector>
-
-<!-- 角丸ボタン
-<shape xmlns:android="http://schemas.android.com/apk/res/android"
-android:shape="rectangle">
-<gradient
-    android:startColor="#b71300"
-    android:endColor="#b71300"
-    android:angle="45"/>
-<padding android:left="7dp"
-    android:top="7dp"
-    android:right="7dp"
-    android:bottom="7dp" />
-<corners android:radius="2dp" />
-</shape> -->
