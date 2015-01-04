@@ -2,10 +2,6 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- NoTitle -->
-        <item name="windowActionBar">false</item>
-        <item name="android:windowNoTitle">true</item>
-
         <!-- For Android-ViewPagerIndicator -->
         <item name="vpiCirclePageIndicatorStyle">@style/CustomCirclePageIndicator</item>
     </style>
@@ -18,4 +14,12 @@
         <item name="radius">5dp</item>
         <item name="centered">true</item>
     </style>
+
+    <!-- Activity theme -->
+    <style name="NoActionBar">
+        <!-- NoActionBar -->
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
 </resources>
