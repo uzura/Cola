@@ -1,6 +1,7 @@
 package net.jp.uzura.cola;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Vibrator;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -48,6 +49,7 @@ public class FunctionActivity extends ActionBarActivity {
         if(id == R.id.action_usage){
             Intent intent = new Intent();
             intent.setClassName("net.jp.uzura.cola", "net.jp.uzura.cola.MainActivity");
+            intent.putExtra("isForceShow",true);
             startActivity(intent);
             return true;
         }else if (id == R.id.action_legal) {
