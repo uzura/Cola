@@ -1,0 +1,13 @@
+<!-- 角丸ボタン -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+android:shape="rectangle">
+<gradient
+    android:startColor="#b71300"
+    android:endColor="#b71300"
+    android:angle="45"/>
+<padding android:left="7dp"
+    android:top="7dp"
+    android:right="7dp"
+    android:bottom="7dp" />
+<corners android:radius="2dp" />
+</shape>

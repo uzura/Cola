@@ -1,0 +1,24 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.jp.uzura.cola.FunctionActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:layout_gravity="center"
+        android:src="@drawable/cola_ccby_blur"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:textSize="15sp"
+        android:text="@string/vibrator_text"
+        android:id="@+id/vibratorButton"
+        android:textColor="#CCCCCC"
+        android:background="@drawable/circle_button"
+        android:layout_gravity="center" />
+
+</FrameLayout>
