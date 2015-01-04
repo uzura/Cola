@@ -33,6 +33,7 @@ public class Welcome4Fragment extends Fragment{
             public void onClick(View v) {
                 Intent intent = new Intent();
                 intent.setClassName("net.jp.uzura.cola", "net.jp.uzura.cola.FunctionActivity");
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
             }
         });

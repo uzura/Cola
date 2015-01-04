@@ -2,12 +2,19 @@
 <resources>
 
     <string name="app_name">コーラ噴出し防止</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_usage">使い方</string>
+    <string name="action_legal">著作権表示</string>
     <string name="vibrator_text">起動</string>
     <string name="start">始める</string>
     <string name="welcome1">このアプリは、缶コーラに適度な振動を与えることで、コーラの噴出しを防ぎます</string>
     <string name="welcome2">使い方は簡単\n起動ボタンを押してスマホを缶に押し当てるだけ</string>
     <string name="welcome3">振動が止まったら、缶を開け、コーラを飲みましょう</string>
     <string name="welcome4">缶とスマホの組み合わせによっては噴出しを防止できないことがあります</string>
+    <string name="title_activity_legal">著作権表示</string>
+    <string name="legal">
+        本アプリケーションはApache License, Version 2.0(http://www.apache.org/licenses/LICENSE-2.0)の下で提供される以下のソースコードを使用しています。\n
+        ・Android-ViewPagerIndicator (https://github.com/JakeWharton/Android-ViewPagerIndicator)
+    </string>
+    <string name="action_return">戻る</string>
 
 </resources>
