@@ -24,4 +24,5 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:21.0.3'
     compile 'com.crittercism:crittercism-android-agent:+'
+    compile 'com.viewpagerindicator:library:2.4.1@aar' //Android-ViewPagerIndicator
 }

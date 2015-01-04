@@ -1,0 +1,8 @@
+<!-- 画像の上に配置するグラデーション -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:startColor="#ff000000"
+        android:endColor="#15000000"
+        android:angle="270"/>
+</shape>

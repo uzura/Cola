@@ -1,0 +1,22 @@
+<!-- 丸ボタン -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- ボタンタップ時 定義 -->
+    <item android:state_pressed="true">
+        <shape android:shape="oval" android:useLevel="false">
+            <solid android:color="#850600" />
+            <stroke android:width="3px" android:color="#CCCCCC" />
+        </shape>
+    </item>
+
+    <!-- ボタン通常表示時 定義 -->
+    <item android:state_pressed="false">
+        <shape android:shape="oval" android:useLevel="false">
+            <gradient
+                android:startColor="#ff5d0500"
+                android:endColor="#ffc21400"
+                android:angle="90"/>
+            <stroke android:width="3px" android:color="#CCCCCC" />
+        </shape>
+    </item>
+</selector>

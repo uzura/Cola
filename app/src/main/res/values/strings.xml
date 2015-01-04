@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Cola</string>
-    <string name="hello_world">Hello world! branch-sample2!</string>
+    <string name="app_name">コーラ噴出し防止</string>
     <string name="action_settings">Settings</string>
-    <string name="vibrator_text">Vibrator起動</string>
+    <string name="vibrator_text">起動</string>
+    <string name="start">始める</string>
+    <string name="welcome1">このアプリは、缶コーラに適度な振動を与えることで、コーラの噴出しを防ぎます</string>
+    <string name="welcome2">使い方は簡単\n起動ボタンを押してスマホを缶に押し当てるだけ</string>
+    <string name="welcome3">振動が止まったら、缶を開け、コーラを飲みましょう</string>
+    <string name="welcome4">缶とスマホの組み合わせによっては噴出しを防止できないことがあります</string>
 
 </resources>
